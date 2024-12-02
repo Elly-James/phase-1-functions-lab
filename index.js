@@ -1,62 +1,4 @@
-// Code your solution in this file!
-/*
-function distanceFromHqInBlocks(pickUpLocation) {
-    const hqBlocks= 42;
-    let numberOfBlocksFromPickUp= Math.abs(hqBlocks-pickUpLocation); //returns an absolute value of the blocks
-    return numberOfBlocksFromPickUp;
-    
-  }
-  
-
-  
-function distanceFromHqInFeet(pickUpLocation){
-    const block = distanceFromHqInBlocks(pickUpLocation); //we call the function here to be able to use it in this function
-    const feetPerBlock= 264;
-    
-    return block*feetPerBlock;
-
-}
-
-function distanceTravelledInFeet(start, destination){
-   
-    return (Math.abs(destination-start))*264;
-    
-
-
-}
-
-function calculatesFarePrice(start, destination){
-    const feetTravelled = distanceTravelledInFeet(start, destination);
-    if(feetTravelled<=400){
-        return 0
-    }
-    else if (feetTravelled>400 && feetTravelled<= 2000){
-        const distanceToCharge= feetTravelled -400;
-
-        return distanceToCharge*0.02;
-    } 
-    else if(feetTravelled>2000 && feetTravelled<=2500){
-        return 25;
-    }
-    else {
-        return 'cannot travel that far'
-    }
-
-
-
-}
- 
-
-
-
-  console.log("Distance in blocks is: " + distanceFromHqInBlocks(34) +"blocks");
-
-  console.log("Distance in feet is: " + distanceFromHqInFeet(34) + "feet");
-
-  console.log("Distance Travelled in feet is: " + distanceTravelledInFeet(34, 42) + "feet");
-
-  console.log("Fare price is:" + calculatesFarePrice(34, 42));
-  */
+//Code your solution in this file!
 
   function distanceFromHqInBlocks(pickUpLocation) {
     const hqBlocks = 42;
@@ -88,7 +30,7 @@ function calculatesFarePrice(start, destination) {
     }
 }
 
-// Testing the functions
+// calling the functions
 console.log("Distance in blocks is: " + distanceFromHqInBlocks(34) + " blocks");
 console.log("Distance in feet is: " + distanceFromHqInFeet(34) + " feet");
 console.log("Distance Travelled in feet is: " + distanceTravelledInFeet(34, 42) + " feet");
